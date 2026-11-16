@@ -7,6 +7,9 @@ class TestText(unittest.TestCase):
     def test_shout(self):
         self.assertEqual(shout("halo"), "HALO!")
 
+    def test_shout_tanda_seru_tidak_digandakan(self):
+        self.assertEqual(shout("halo!"), "HALO!")
+
     def test_count_words(self):
         self.assertEqual(count_words("satu dua tiga"), 3)
 

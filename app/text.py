@@ -2,6 +2,8 @@
 
 
 def shout(s):
+    if s.endswith("!"):
+        return s.upper()
     return s.upper() + "!"
 
 
